@@ -1,0 +1,34 @@
+$grad-dark:#2E0916;
+$grad-light:#55465E;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-image: linear-gradient(160deg, $grad-dark, $grad-light);
+  display: flex;
+}
+
+.left, .right{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ghost{
+  //border: 2px solid red;
+  width: 80%;
+  height: 80%;
+  // background-image: url('../Images/red-ghost.svg');
+  // background-size: cover;
+}

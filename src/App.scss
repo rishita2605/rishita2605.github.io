@@ -2,20 +2,19 @@ section {
   position: relative;
   width: 400px;
   height: 100px;
+  // box-shadow: rgb(50 50 93 / 20%) 0px 30px 60px -12px, rgb(0 0 0 / 28%) 0px 18px 36px -18px;
 }
 
 .noise {
   height: 100%;
   background: linear-gradient(30deg, rgba(6, 6, 9, 0.325), rgba(0, 0, 0, 0.464)), url(svg/noise.svg);
-  -webkit-filter: contrast(170%) brightness(1000%);
-          filter: contrast(170%) brightness(1000%);
+  filter: contrast(170%) brightness(1000%);
 }
 
 /* Chrome-specific */
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
   .noise {
-    -webkit-filter: contrast(290%) brightness(1000%);
-            filter: contrast(290%) brightness(1000%);
+    filter: contrast(290%) brightness(1000%);
   }
 }
 
@@ -34,4 +33,3 @@ section {
   background: #583011;
   mix-blend-mode: multiply;
 }
-/*# sourceMappingURL=App.css.map */

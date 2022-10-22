@@ -20,13 +20,10 @@ function App() {
         <Loader />
       ) : (
         <div className="App">
-          
-          <section>
-            <div class="isolate">
-              <div class="noise"></div>
-              <div class="overlay"></div>
+            <div className="background background--isolate">
+              <div className="background__noise"></div>
+              <div className="background__overlay"></div>
             </div>
-          </section>
         </div>
       )}
     </div>

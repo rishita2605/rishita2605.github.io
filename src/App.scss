@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 .App {
   position: relative;
   width: 100vw;
   height: 100vh;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .background--isolate {
@@ -9,12 +12,14 @@
   position: relative;
   width: 100%;
   height: 100%;
+  // border: 62px solid rebeccapurple;
 }
 
 .background__noise {
   height: 100%;
   background: linear-gradient(30deg, rgba(3, 2, 2, 0.3), rgba(0, 0, 0, 0.26)), url(assets/svg/noise.svg);
   filter: contrast(170%);
+  
 }
 
 .background__overlay {
@@ -25,6 +30,8 @@
   background: #5d270f; // #583011; 
   background-image: radial-gradient(closest-side at 30% 50%, #4c1f0c, #2f1a11, #19110e);
   mix-blend-mode: multiply;
+  
+  // border: 2px solid royalblue;
 }
 
 /* Chrome-specific */

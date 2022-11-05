@@ -1,3 +1,25 @@
-.profile__picture{
-  border: 2px solid red;
+.profile__container{
+  border: 3px solid var(--wheat);
+  width: fit-content;
+  border-radius: 400em;
+  padding: 2em;
+  position: relative;
+  
+  .profile__picture{
+
+    border-radius: 400em;
+    width: 24em;
+    
+  }
+
+  .profile__text{
+
+    position: absolute;
+    right: 0;
+    bottom: 2em;
+    font-size: 2rem;
+    font-weight: 600;
+
+  }
+
 }

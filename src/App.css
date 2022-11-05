@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 .App {
   position: relative;
   width: 100vw;
   height: 100vh;
-  font-family: 'Cormorant Garamond', serif;
 }
 
 .background--isolate {
@@ -26,8 +24,16 @@
   width: 100%;
   height: 100%;
   background: #5d270f;
-  background-image: radial-gradient(closest-side at 30% 50%, #4c1f0c, #2f1a11, #19110e);
+  background-image: radial-gradient(closest-side at 30% 50%, var(--light-brown), var(--medium-brown), var(--dark-brown));
   mix-blend-mode: multiply;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  border: 2px solid palevioletred;
 }
 
 /* Chrome-specific */

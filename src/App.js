@@ -21,7 +21,7 @@ function App() {
         <div className="App">
           <div className="background background--isolate">
             <div className="background__noise"></div>
-            <div className="main background__overlay">
+            <div className="main background__overlay grid">
               <ProfilePicture />
             </div>
           </div>

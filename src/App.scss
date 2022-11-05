@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 
 .App {
   position: relative;
   width: 100vw;
   height: 100vh;
-  font-family: 'Cormorant Garamond', serif;
 }
 
 .background--isolate {
@@ -12,7 +11,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-  // border: 62px solid rebeccapurple;
 }
 
 .background__noise {
@@ -28,12 +26,16 @@
   width: 100%;
   height: 100%;
   background: #5d270f; // #583011; 
-  background-image: radial-gradient(closest-side at 30% 50%, #4c1f0c, #2f1a11, #19110e);
+  background-image: radial-gradient(closest-side at 30% 50%, var(--light-brown), var(--medium-brown) , var(--dark-brown));
   mix-blend-mode: multiply;
   
-  // border: 2px solid royalblue;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto; // three columns -- one for picture, one for hero text? and one for navigation
+  border: 2px solid palevioletred;
+}
 /* Chrome-specific */
 @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
   .noise {

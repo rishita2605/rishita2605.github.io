@@ -1,23 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 
-:root{
-  --light-yellow: rgb(221,208,89); 
-  --white-7: rgba(253, 251, 230, 0.07); ; 
-  --light-brown: #4c1f0c ;
-  --medium-brown: #2f1a11 ;
-  --dark-brown: #19110e ;
-  --wheat: #9f8975; 
+:root {
+  --light-yellow: rgb(221, 208, 89);
+  --white-7: rgba(253, 251, 230, 0.07);
+  --light-brown: #4c1f0c;
+  --medium-brown: #2f1a11;
+  --dark-brown: #19110e;
+  --wheat: #9f8975;
   --background-black: #171515;
-  --orange-opaque: #D04515;
+  --orange-opaque: #d04515;
   --orange-50: rgba(209, 68, 21, 0.5);
 
+  --horizontal-padding: 7vw;
+  --vertical-padding: 5vh;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   user-select: none;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   z-index: 1; /* To ensure all elements are in front of the background text if the element is specified a position*/
 }

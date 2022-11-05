@@ -25,12 +25,17 @@
     overflow: hidden;
 
     .background-text__left {
-      transform: translateX(-46px);
+      transform: translateX(-20%);
     }
 
     .background-text__right{
-      transform: translateX(50px);
+      transform: translateX(20%);
     }
+  }
+
+  .main{
+    height: 100%;
+    padding: var(--vertical-padding) var(--horizontal-padding);
   }
 }
 
@@ -50,6 +55,7 @@
 }
 
 .background__overlay {
+
   position: absolute;
   top: 0;
   width: 100%;
@@ -60,11 +66,6 @@
   
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: auto auto auto; // three columns -- one for picture, one for hero text? and one for navigation
-  border: 2px solid palevioletred;
-}
 /* Chrome-specific */
 @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
   .noise {

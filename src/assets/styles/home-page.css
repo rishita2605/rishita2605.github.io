@@ -1,0 +1,7 @@
+.grid {
+  border: 12px solid purple;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=home-page.css.map */

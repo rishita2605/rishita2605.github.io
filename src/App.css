@@ -27,13 +27,18 @@
 }
 
 .App .background-text .background-text__left {
-  -webkit-transform: translateX(-46px);
-          transform: translateX(-46px);
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
 }
 
 .App .background-text .background-text__right {
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+.App .main {
+  height: 100%;
+  padding: var(--vertical-padding) var(--horizontal-padding);
 }
 
 .background--isolate {
@@ -58,14 +63,6 @@
   background: #5d270f;
   background-image: radial-gradient(closest-side at 30% 50%, var(--light-brown), var(--medium-brown), var(--dark-brown));
   mix-blend-mode: multiply;
-}
-
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  border: 2px solid palevioletred;
 }
 
 /* Chrome-specific */

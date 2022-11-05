@@ -2,6 +2,38 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  background: var(--background-black);
+  color: var(--light-yellow);
+}
+
+.App .background-text {
+  height: 100%;
+  width: 100%;
+  color: var(--white-7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 0;
+  font-size: 11rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.App .background-text .background-text__left {
+  -webkit-transform: translateX(-46px);
+          transform: translateX(-46px);
+}
+
+.App .background-text .background-text__right {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 .background--isolate {

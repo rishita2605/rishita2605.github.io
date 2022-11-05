@@ -1,10 +1,10 @@
-import "./HomePage.css";
-import { useState, useEffect } from "react";
-import ProfilePicture from "../profile-picture/profile-picture";
+// import "./HomePage.css";
+// import { useState, useEffect } from "react";
+
 function HomePage() {
   return (
-    <div className="homepage">
-      <ProfilePicture />
+    <div className="main homepage" id="homepage">
+      hello
     </div>
   );
 }

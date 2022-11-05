@@ -4,8 +4,37 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  background: var(--background-black);
+  color: var(--light-yellow);
+  // background-image: linear-gradient(70deg, var(--background-black), var(--dark-brown))
+  .background-text{
+
+    height: 100%;
+    width: 100%;
+    color: var(--white-7);
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
+    position: absolute;
+    z-index: 0; // To make sure the text remains in the background
+
+    font-size: 11rem;
+    font-weight: 700;
+    overflow: hidden;
+
+    .background-text__left {
+      transform: translateX(-46px);
+    }
+
+    .background-text__right{
+      transform: translateX(50px);
+    }
+  }
 }
 
+// for the grainy effect
 .background--isolate {
   isolation: isolate;
   position: relative;

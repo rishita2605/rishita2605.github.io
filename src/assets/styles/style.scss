@@ -1,0 +1,13 @@
+// Common stylesheet for certain components
+// Used by the following components -> Social
+
+.socials {
+  height: 40%;
+  color: var(--white-70);
+  padding: 0 2vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+}

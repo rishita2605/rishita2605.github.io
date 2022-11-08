@@ -2,6 +2,7 @@
 
 :root {
   --light-yellow: rgb(221, 208, 89);
+  --white-70: rgba(253, 251, 230, 0.7);
   --white-7: rgba(253, 251, 230, 0.07);
   --light-brown: #4c1f0c;
   --medium-brown: #2f1a11;

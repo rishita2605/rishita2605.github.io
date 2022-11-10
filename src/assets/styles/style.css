@@ -1,7 +1,6 @@
 .socials {
   height: 40%;
   color: var(--white-70);
-  padding: 0 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,5 +14,10 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.socials a:link,
+.socials a:visited {
+  color: var(--white-70);
 }
 /*# sourceMappingURL=style.css.map */

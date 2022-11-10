@@ -1,5 +1,3 @@
-
-
 .App {
   position: relative;
   width: 100vw;
@@ -7,16 +5,15 @@
   background: var(--background-black);
   color: var(--light-yellow);
   // background-image: linear-gradient(70deg, var(--background-black), var(--dark-brown))
-  .background-text{
-
+  .background-text {
     height: 100%;
     width: 100%;
     color: var(--white-7);
 
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    
+
     position: absolute;
     z-index: 0; // To make sure the text remains in the background
 
@@ -28,14 +25,15 @@
       transform: translateX(-20%);
     }
 
-    .background-text__right{
+    .background-text__right {
       transform: translateX(20%);
     }
   }
 
-  .main{
+  .main {
     height: 100%;
     padding: var(--vertical-padding) var(--horizontal-padding);
+    padding-bottom: 0;
   }
 }
 
@@ -49,27 +47,29 @@
 
 .background__noise {
   height: 100%;
-  background: linear-gradient(30deg, rgba(3, 2, 2, 0.3), rgba(0, 0, 0, 0.26)), url(assets/svg/noise.svg);
+  background: linear-gradient(30deg, rgba(3, 2, 2, 0.3), rgba(0, 0, 0, 0.26)),
+    url(assets/svg/noise.svg);
   filter: contrast(170%);
-  
 }
 
 .background__overlay {
-
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #5d270f; // #583011; 
-  background-image: radial-gradient(closest-side at 30% 50%, var(--light-brown), var(--medium-brown) , var(--dark-brown));
+  background: #5d270f; // #583011;
+  background-image: radial-gradient(
+    closest-side at 30% 50%,
+    var(--light-brown),
+    var(--medium-brown),
+    var(--dark-brown)
+  );
   mix-blend-mode: multiply;
-  
 }
 
 /* Chrome-specific */
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   .noise {
     filter: contrast(290%);
   }
 }
-

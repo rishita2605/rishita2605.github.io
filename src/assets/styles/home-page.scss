@@ -1,8 +1,11 @@
+.homepage {
+  padding-bottom: 0;
+}
 .grid {
   border: 2px solid purple;
   height: 100%;
   display: grid;
-  grid-template-columns: fit-content(5vw) 50vw auto; // Width of social media icons, main content & the navigation part
+  grid-template-columns: fit-content(5vw) fit-content(50vw) auto; // Width of social media icons, main content & the navigation part
 
   .grid__column {
     border: 2px solid slateblue;

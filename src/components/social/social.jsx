@@ -4,16 +4,16 @@ import { Icon } from "@iconify/react";
 function Social() {
   return (
     <div className="socials">
-      <a className="socials__icon">
+      <a className="socials__icon" href="#" target={"_blank"} rel="noreferrer">
         <Icon icon="icon-park-solid:twitter" />
       </a>
-      <a className="socials__icon">
+      <a className="socials__icon" href="#" target={"_blank"} rel="noreferrer">
         <Icon icon="entypo-social:github" />
       </a>
-      <a className="socials__icon">
+      <a className="socials__icon" href="#" target={"_blank"} rel="noreferrer">
         <Icon icon="bxl:gmail" />
       </a>
-      <a className="socials__icon">
+      <a className="socials__icon" href="#" target={"_blank"} rel="noreferrer">
         <Icon icon="eva:linkedin-fill" />
       </a>
     </div>

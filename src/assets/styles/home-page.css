@@ -1,10 +1,14 @@
+.homepage {
+  padding-bottom: 0;
+}
+
 .grid {
   border: 2px solid purple;
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: fit-content(5vw) 50vw auto;
-      grid-template-columns: fit-content(5vw) 50vw auto;
+  -ms-grid-columns: fit-content(5vw) fit-content(50vw) auto;
+      grid-template-columns: fit-content(5vw) fit-content(50vw) auto;
 }
 
 .grid .grid__column {

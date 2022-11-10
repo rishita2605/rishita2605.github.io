@@ -4,10 +4,18 @@
 .socials {
   height: 40%;
   color: var(--white-70);
-  padding: 0 2vw;
+  // padding: 0 2vw;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-content: space-evenly;
+
+  a:link,
+  a:visited {
+    color: var(--white-70);
+  }
+}
+
+.navigation {
 }

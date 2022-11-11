@@ -7,8 +7,8 @@
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: fit-content(5vw) fit-content(50vw) auto;
-      grid-template-columns: fit-content(5vw) fit-content(50vw) auto;
+  -ms-grid-columns: fit-content(5vw) 1fr fit-content(5vw);
+      grid-template-columns: fit-content(5vw) 1fr fit-content(5vw);
 }
 
 .grid .grid__column {

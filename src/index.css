@@ -14,6 +14,9 @@
 
   --horizontal-padding: 7vw;
   --vertical-padding: 5vh;
+
+  --body-font-size: 1rem; 
+  --medium-font-size: 1.2rem;
 }
 
 * {
@@ -23,4 +26,12 @@
   user-select: none;
   font-family: "Cormorant Garamond", serif;
   z-index: 1; /* To ensure all elements are in front of the background text if the element is specified a position*/
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: var(--white-70);
 }

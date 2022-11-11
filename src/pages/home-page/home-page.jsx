@@ -1,4 +1,5 @@
 import "../../assets/styles/home-page.css";
+import Navigation from "../../components/navigation/navigation";
 import Social from "../../components/social/social";
 // import { useState, useEffect } from "react";
 
@@ -10,7 +11,9 @@ function HomePage() {
           <Social />
         </div>
         <div className="grid__column"></div>
-        <div className="grid__column"></div>
+        <div className="grid__column">
+          <Navigation />
+        </div>
       </div>
     </div>
   );

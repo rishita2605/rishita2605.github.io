@@ -21,7 +21,76 @@
           align-items: center;
 }
 
+.grid .hero__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .hero {
-  border: 2px solid yellow;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero .hero__oval {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+}
+
+.hero .hero__oval .oval__outer {
+  width: 297px;
+  width: 20em;
+  height: 598px;
+  height: 39em;
+  border: 5px solid var(--orange-opaque);
+  border-radius: 50em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 100px 85px inset rgba(21, 21, 21, 0.8);
+          box-shadow: 0 100px 85px inset rgba(21, 21, 21, 0.8);
+}
+
+.hero .hero__oval .oval__outer .oval__inner {
+  border: 3px solid var(--orange-50);
+  height: 92%;
+  width: 88%;
+  border-radius: 20em;
+}
+
+.hero .hero__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 400px;
+  width: 27em;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=home-page.css.map */

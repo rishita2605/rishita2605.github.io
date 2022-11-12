@@ -1,3 +1,6 @@
+// variables to control the height and width of hero image and hero oval.
+// $hero-height: 27em ;
+// $hero-width; ;
 .homepage {
   padding-bottom: 0;
 }
@@ -13,8 +16,55 @@
     display: flex;
     align-items: center;
   }
+
+  .hero__column {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero {
-  border: 2px solid yellow;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .hero__oval {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+
+    .oval__outer {
+      width: 297px;
+      width: 20em;
+      height: 598px;
+      height: 39em;
+      border: 5px solid var(--orange-opaque);
+      border-radius: 50em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+      box-shadow: 0 100px 85px inset rgba($color: #151515, $alpha: 0.8);
+
+      .oval__inner {
+        border: 3px solid var(--orange-50);
+        height: 92%;
+        width: 88%;
+        border-radius: 20em;
+      }
+    }
+  }
+
+  .hero__image {
+    object-fit: cover;
+    // height: 250px;
+    width: 400px;
+    width: 27em;
+    border-radius: 10px;
+  }
 }

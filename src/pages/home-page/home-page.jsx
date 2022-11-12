@@ -12,20 +12,25 @@ function HomePage() {
         <div className="grid__column">
           <Social />
         </div>
-        <div className="grid__column">
+        <div className="grid__column hero__column">
           <div className="hero">
             <div className="hero__oval">
-              <div className="oval__inner"></div>
+              <div className="oval__outer">
+                <div className="oval__inner"></div>
+              </div>
+
+              <div className="oval__text">
+                <div className="text__main"></div>
+                <div className="text__sub"></div>
+              </div>
             </div>
-            <picture>
-              <source srcSet="" media="min-width(600px)" />
-              <img
-                className="hero__image"
-                src=""
-                height={200}
-                width={500}
-              ></img>
-            </picture>
+            {/* <picture> */}
+            {/* <source srcSet="" media="min-width(600px)" /> */}
+            <img
+              className="hero__image"
+              src="https://user-images.githubusercontent.com/64982040/201480070-fc81d2da-0b64-499d-b126-be4114edfee5.png"
+            ></img>
+            {/* </picture> */}
           </div>
         </div>
         <div className="grid__column">

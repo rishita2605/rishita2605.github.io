@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   background: var(--background-black);
-  color: var(--light-yellow);
+  color: var(--white-70);
 }
 
 .App .background-text {

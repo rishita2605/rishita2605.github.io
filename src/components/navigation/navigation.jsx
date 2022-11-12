@@ -1,9 +1,10 @@
 import "../../assets/styles/style.css";
 // import { useState, useEffect } from "react";
-function Navigation() {
+import PropTypes from "prop-types";
+export default function Navigation({ date }) {
   return (
     <div className="navigation">
-      <div className="navigation__item"></div>
+      <div className="navigation__item">{date}</div>
       <div className="navigation__item">
         <a className="nav-item" href="#">
           {/* pass this through props maybe as an array */}
@@ -31,4 +32,7 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+Navigation.displayName = "Navigation";
+Navigation.propTypes = {
+  date: PropTypes.object.isRequired,
+};

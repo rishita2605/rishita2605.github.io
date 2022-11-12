@@ -1,10 +1,9 @@
 // Common stylesheet for certain components
-// Used by the following components -> Social
+// Used by the following components -> Social, navigation
 
 .socials {
   height: 40%;
   color: var(--white-70);
-  // padding: 0 2vw;
 
   display: flex;
   flex-direction: column;
@@ -19,11 +18,14 @@
 
 .navigation {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 7vh 1fr 7vh;
+  place-items: center;
+
+  .navigation__item {
+    width: 100%;
+  }
   .nav-item {
-    width: 148px;
     margin: 0.8em 0;
 
     display: flex;
@@ -31,17 +33,41 @@
     justify-content: flex-end;
 
     color: var(--white-70);
-    font-size: var(--medium-font-size);
-    line-height: var(--medium-font-size);
+    font-size: var(--body-font-size);
+    line-height: var(--body-font-size);
     font-weight: 600;
 
     .nav-item__id {
-      font-size: calc(1.5 * var(--medium-font-size));
+      font-size: calc(1.8 * var(--body-font-size));
+      font-size: var(--medium-font-size);
       margin: 0 0 0 15px;
-      line-height: var(--medium-font-size);
+      line-height: var(--body-font-size);
     }
 
     .nav-item__menu {
     }
+  }
+}
+
+.date {
+  display: flex;
+  font-weight: 600;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 100%;
+  .date__month,
+  .date__year,
+  .date__dot {
+    margin: 0 4px;
+  }
+  .date__month {
+    font-size: var(--medium-font-size);
+    color: var(
+      --orange-opaque,
+      orange
+    ); // orange is the fallback color is the variable value is not found
+  }
+  .date__year {
+    font-size: var(--large-font-size);
   }
 }

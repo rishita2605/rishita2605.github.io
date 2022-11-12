@@ -20,4 +20,8 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.hero {
+  border: 2px solid yellow;
+}
 /*# sourceMappingURL=home-page.css.map */

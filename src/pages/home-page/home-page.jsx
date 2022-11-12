@@ -12,7 +12,22 @@ function HomePage() {
         <div className="grid__column">
           <Social />
         </div>
-        <div className="grid__column"></div>
+        <div className="grid__column">
+          <div className="hero">
+            <div className="hero__oval">
+              <div className="oval__inner"></div>
+            </div>
+            <picture>
+              <source srcSet="" media="min-width(600px)" />
+              <img
+                className="hero__image"
+                src=""
+                height={200}
+                width={500}
+              ></img>
+            </picture>
+          </div>
+        </div>
         <div className="grid__column">
           <Navigation date={date} />
         </div>

@@ -16,12 +16,12 @@ function HomePage() {
           <div className="hero">
             <div className="hero__oval">
               <div className="oval__outer">
-                <div className="oval__inner"></div>
-              </div>
-
-              <div className="oval__text">
-                <div className="text__main"></div>
-                <div className="text__sub"></div>
+                <div className="oval__inner">
+                  <div className="oval__text">
+                    <div className="text__main">Rishita Raha</div>
+                    <div className="text__sub">Based in Bangalore | India</div>
+                  </div>
+                </div>
               </div>
             </div>
             {/* <picture> */}

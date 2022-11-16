@@ -59,8 +59,6 @@
 
 .hero .hero__oval .oval__outer {
   width: 297px;
-  width: 20em;
-  height: 598px;
   height: 39em;
   border: 5px solid var(--orange-opaque);
   border-radius: 50em;
@@ -77,6 +75,7 @@
      object-fit: cover;
   -webkit-box-shadow: 0 100px 85px inset rgba(21, 21, 21, 0.8);
           box-shadow: 0 100px 85px inset rgba(21, 21, 21, 0.8);
+  overflow-x: visible;
 }
 
 .hero .hero__oval .oval__outer .oval__inner {
@@ -84,6 +83,41 @@
   height: 92%;
   width: 88%;
   border-radius: 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow-x: visible;
+  padding: 0 0 3em 0;
+}
+
+.hero .hero__oval .oval__outer .oval__inner .oval__text {
+  font-weight: 700;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero__oval .oval__outer .oval__inner .oval__text .text__main {
+  font-size: 6.4rem;
+  line-height: 5rem;
+}
+
+.hero .hero__oval .oval__outer .oval__inner .oval__text .text__sub {
+  font-size: 1.4rem;
 }
 
 .hero .hero__image {

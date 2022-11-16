@@ -18,6 +18,11 @@
   --body-font-size: 1.2rem; 
   --medium-font-size: 1.7rem;
   --large-font-size: 2.5rem;
+  --larger-font-size: 4rem; 
+
+  /* homepage hero image */
+  --hero-image-width: 20em;
+  --hero-image-height: 20em;
 }
 
 * {
